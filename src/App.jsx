@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <CartProvider>
-      <BrowserRouter>
+       <BrowserRouter>
         <div className="flex flex-col min-h-screen relative">
           <Header onSearch={setSearch} />
 

@@ -58,8 +58,8 @@ export default function Cart() {
       )}
 
       <h1 className="text-[28px] font-bold text-[#FF6600] uppercase tracking-wide">
-        <span className="text-green-600">Carrinho</span>{" "}
-        <span className="text-orange-500">de Compras</span>
+        <span className="text-green-700">Carrinho</span>{" "}
+        <span className="text-orange-600">de Compras</span>
       </h1>
       <hr className="border border-green-500 mb-6" />
 
@@ -151,7 +151,7 @@ export default function Cart() {
 
               <div className="mt-6">
                 <div className="flex justify-between items-center mb-3">
-                  <h3 className="w-[208px] h-[31px] font-inter font-bold text-[26px] leading-none">
+                  <h3 className="font-inter font-bold text-[26px] leading-none">
                     <span className="text-green-600">Formas </span>
                     <span className="text-orange-500">de envio</span>
                   </h3>

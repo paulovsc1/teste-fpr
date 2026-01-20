@@ -145,13 +145,13 @@ export default function Sidebar({ onFilterChange }) {
           <div className="mt-4 flex gap-2 border-t pt-4 sticky bottom-0 bg-white pb-4">
             <button
               onClick={applyFilters}
-              className="w-[147px] h-[53px] bg-green-600 text-white font-inter font-bold text-[16px] transition-colors duration-300 hover:bg-green-700"
+              className="w-[137px] h-[43px] bg-green-600 text-white font-inter font-bold text-[16px] transition-colors duration-300 hover:bg-green-700"
             >
               PESQUISAR
             </button>
             <button
               onClick={clearFilters}
-              className="w-[147px] h-[53px] bg-orange-500 text-white font-inter font-bold text-[16px] transition-colors duration-300 hover:bg-orange-600"
+              className="w-[162px] h-[43px] bg-orange-500 text-white font-inter font-bold text-[16px] transition-colors duration-300 hover:bg-orange-600"
             >
               LIMPAR FILTROS
             </button>

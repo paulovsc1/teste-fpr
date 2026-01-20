@@ -1,4 +1,3 @@
-// src/hooks/useCards.js
 import { useEffect, useState } from "react";
 
 function norm(s) {
@@ -31,7 +30,6 @@ export function useCards(page, filters, limit = 10, search = "") {
       let hasOnlyInvalid = false;
       let anyValidMapped = false;
 
-      // ----- map tipos -----
       for (const t of selectedTypes) {
         const k = norm(t);
 
@@ -61,11 +59,11 @@ export function useCards(page, filters, limit = 10, search = "") {
           anyValidMapped = true;
           continue;
         }
-        // "monstro" é amplo -> não mapeia diretamente
+       
         if (k === "monstro") continue;
       }
 
-      // ----- map atributos/races/propriedades -----
+     
       for (const a of selectedAttrs) {
         const k = norm(a);
 
@@ -204,7 +202,7 @@ export function useCards(page, filters, limit = 10, search = "") {
         if (k === "monster" || k === "monstro" || k === "n/a") continue;
       }
 
-      // ⚠️ Só considera "inválido" se HOUVER filtros selecionados (attrs/types).
+     
       const hasAnyFilterSelected = selectedAttrs.length + selectedTypes.length > 0;
       if (
         hasAnyFilterSelected &&
@@ -225,9 +223,9 @@ export function useCards(page, filters, limit = 10, search = "") {
 
       const params = new URLSearchParams();
       params.set("num", String(limit));
-      params.set("offset", String((page - 1) * limit)); // 0-based
+      params.set("offset", String((page - 1) * limit)); 
 
-      // ❌ sem double-encode aqui; URLSearchParams já cuida disso
+     
       if (search && search.trim()) {
         params.set("fname", search.trim());
       }

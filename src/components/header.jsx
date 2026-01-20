@@ -53,7 +53,7 @@ function Header({ onSearch }) {
 
       <Link to="/cart" className="relative">
         <img
-          src="/icons8-carrinho-96 1.png"
+          src="/icons8-carrinho-961.png"
           alt="Carrinho"
           className="w-[40px] md:w-[50px] h-auto"
         />
