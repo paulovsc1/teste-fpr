@@ -23,12 +23,10 @@ export default function Home({ search }) {
 
       <div className="flex-1 p-3 sm:p-4">
         <div className="w-full max-w-[1360px] mx-auto">
-          {/* Banner: some no mobile */}
           <div className="mb-8 hidden md:block">
             <Banner />
           </div>
 
-          {/* Topbar: quebra no mobile */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
             <div className="flex items-center gap-2">
               <select
@@ -102,7 +100,6 @@ export default function Home({ search }) {
               </p>
             </div>
           ) : (
-            // Grid: 1 coluna no mobile (para não espremer o botão)
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-6 mb-16">
               {cards.map((card) => (
                 <Card key={card.id} card={card} />

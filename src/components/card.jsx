@@ -43,7 +43,6 @@ function Card({ card }) {
           R$ {priceBRL}
         </p>
 
-        {/* Botão: desktop igual / mobile melhor */}
         <button
           className="
             w-full min-h-[44px]
